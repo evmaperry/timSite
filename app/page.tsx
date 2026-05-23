@@ -14,7 +14,7 @@ import sunnyAndTim from '@/may_23_sunny_and_tim.jpeg';
 export default function Home() {
   return (
     <div className='flex flex-col flex-1 items-center justify-center font-sans'>
-      <main className='flex flex-1 w-full max-w-3xl flex-col items-center justify-start gap-y-4 py-16 px-16 sm:items-start'>
+      <main className='flex flex-1 w-full max-w-3xl flex-col items-center justify-start gap-y-4 py-16 px-4 sm:px-16 sm:items-start'>
         <header className={'mb-6'}>
           <div className={'text-4xl'}>Tim&apos;s Journey</div>
         </header>
@@ -65,7 +65,7 @@ export default function Home() {
               <br />
               the Perry&apos;s
             </div>
-            <Carousel className={'flex relative h-88 w-5/6 mx-auto mt-4'}>
+            <Carousel className={'flex relative h-88 w-2/3 sm:w-5/6 mx-auto mt-4'}>
               <CarouselContent className={'h-full w-full'}>
                 {[evanAndTim, sunnyAndTim].map((image, index) => {
                   return (
