@@ -71,7 +71,7 @@ export default function Home() {
                   return (
                     <CarouselItem
                       key={`photo-${index}`}
-                      className={'flex justify-center h-full w-full'}
+                      className={'flex justify-center items-center h-full w-full'}
                     >
                       <Image
                         src={image}
@@ -84,7 +84,7 @@ export default function Home() {
                   );
                 })}
               </CarouselContent>
-              <CarouselPrevious className={'absolute '} />
+              <CarouselPrevious/>
               <CarouselNext />
             </Carousel>
           </div>
