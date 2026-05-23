@@ -1,13 +1,15 @@
 import Image from 'next/image';
-import * as React from "react"
-import { Card, CardContent } from "@/components/ui/card"
+import * as React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from '@/components/ui/carousel';
+import evanAndTim from '@/may_23_evan_and_tim.jpg';
+import sunnyAndTim from '@/may_23_sunny_and_tim.jpeg';
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
         <div className={'entry-post'}>
           <div className={'entry-title-container'}>
             <div className='entry-title-text'>A new chapter</div>
-            <div className='entry-subtitle-text'>May 23rd</div>
+            <div className='entry-subtitle-text'>May 23rd, 2026</div>
           </div>
 
           <div className={'entry-body'}>
@@ -63,10 +65,27 @@ export default function Home() {
               <br />
               the Perry&apos;s
             </div>
-            <Carousel>
-              <CarouselContent>
-                
+            <Carousel className={'flex relative h-88 w-5/6 mx-auto mt-4'}>
+              <CarouselContent className={'h-full w-full'}>
+                {[evanAndTim, sunnyAndTim].map((image, index) => {
+                  return (
+                    <CarouselItem
+                      key={`photo-${index}`}
+                      className={'flex justify-center h-full w-full'}
+                    >
+                      <Image
+                        src={image}
+                        alt={'photo'}
+                        height={500}
+                        width={500}
+                        style={{objectFit:'contain'}}
+                      />
+                    </CarouselItem>
+                  );
+                })}
               </CarouselContent>
+              <CarouselPrevious className={'absolute '} />
+              <CarouselNext />
             </Carousel>
           </div>
         </div>
