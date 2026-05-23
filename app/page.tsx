@@ -13,7 +13,7 @@ import sunnyAndTim from '@/may_23_sunny_and_tim.jpeg';
 
 export default function Home() {
   return (
-    <div className='flex flex-col flex-1 items-center justify-center '>
+    <div className='flex flex-col flex-1 items-center justify-center font-sans'>
       <main className='flex flex-1 w-full max-w-3xl flex-col items-center justify-start gap-y-4 py-16 px-16 sm:items-start'>
         <header className={'mb-6'}>
           <div className={'text-4xl'}>Tim&apos;s Journey</div>
