@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <Carousel className={'flex relative h-100 w-2/3 sm:w-5/6 mx-auto mt-4'}>
               <CarouselContent className={'h-full w-full'}>
-                {[evanAndTim, sunnyAndTim].map((image, index) => {
+                {[ sunnyAndTim,evanAndTim,].map((image, index) => {
                   return (
                     <CarouselItem
                       key={`photo-${index}`}
