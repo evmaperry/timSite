@@ -22,7 +22,7 @@ export default function Home() {
         <div className={'entry-post'}>
           <div className={'entry-title-container'}>
             <div className='entry-title-text'>A new chapter</div>
-            <div className='entry-subtitle-text'>May 23rd, 2026</div>
+            <div className='entry-subtitle-text'>May 26th, 2026</div>
           </div>
 
           <div className={'entry-body'}>
@@ -38,55 +38,73 @@ export default function Home() {
               stopped the bleeding; however, Tim didn&apos;t recover from his
               surgery as we hoped he would. Before his fall he was showing
               symptoms of stage 4 Parkinson&apos;s. His injury has significantly
-              exacerbated those symptoms. As of writing, he recognizes us and
-              can speak a little, but otherwise is very sleepy and requires
-              around-the-clock care.
+              exacerbated those symptoms and his life expectancy is being
+              measured in weeks.
             </div>
             <div>
               After consulting with medical professionals, we&apos;ve decided to
               adopt a palliative care approach with Tim. We brought Tim home on
-              May 22nd and are working with Munson Hospice on an in-home basis.
-              This means we will give him comfort care, but not seek further
-              medical intervention.
+              May 22nd and are working with Munson Hospice and other care
+              providers on an in-home basis. This means we will give him comfort
+              care, but not seek further medical intervention.
             </div>
             <div>
-              Tim was relieved to get home. It will be wonderful for him to
+              Tim was relieved to get home. It&apos;s been wonderful for him to
               sleep and wake up in his own bed. We are thrilled to have him
               home. We are hoping that with better sleep, home-cooked meals and
               boat-loads of love his health can improve to some degree.
             </div>
             <div>
-              Thank you so, so much for all of the ongoing love and support
-              you&apos;ve shown us. We&apos;ll update this space periodically to
-              let you know how things are going ❤️
+              As of writing, he recognizes us and can speak a little, but
+              otherwise is very sleepy and requires around-the-clock care.
+              He&apos;s more alert and talkative in the evenings—from about 5pm
+              to 8pm. We&apos;d be delighted for you to visit, but ask that you
+              do two things:
+              <ol className={'list-decimal list pl-12 mt-2'}>
+                <li>Plan your visit for the afternoon or evening</li>
+                <li>
+                  Text Anne, Scott or Evan to arrange the exact timing in
+                  advance to avoid a crowd
+                </li>
+              </ol>
+            </div>
+            <div>
+              Thank you so, so much for all of the love and support you&apos;ve
+              shown us. And rest assured: our fridge is absolutely overflowing.
+              We&apos;ll update this space periodically to let you know how
+              things are going ❤️
             </div>
             <div>
               With love,
               <br />
               the Perry&apos;s
             </div>
-            <Carousel className={'flex relative h-100 w-2/3 sm:w-5/6 mx-auto mt-4'}>
+            {/* <Carousel
+              className={'flex relative h-100 w-2/3 sm:w-5/6 mx-auto mt-4'}
+            >
               <CarouselContent className={'h-full w-full'}>
-                {[ sunnyAndTim,evanAndTim,].map((image, index) => {
+                {[sunnyAndTim, evanAndTim].map((image, index) => {
                   return (
                     <CarouselItem
                       key={`photo-${index}`}
-                      className={'flex justify-center items-center h-full w-full'}
+                      className={
+                        'flex justify-center items-center h-full w-full'
+                      }
                     >
                       <Image
                         src={image}
                         alt={'photo'}
                         height={500}
                         width={500}
-                        style={{objectFit:'contain'}}
+                        style={{ objectFit: 'contain' }}
                       />
                     </CarouselItem>
                   );
                 })}
               </CarouselContent>
-              <CarouselPrevious/>
+              <CarouselPrevious />
               <CarouselNext />
-            </Carousel>
+            </Carousel> */}
           </div>
         </div>
       </main>
