@@ -28,7 +28,7 @@ export default function Home() {
           <div className={'entry-body'}>
             <div>Hello friends and family,</div>
             <div>
-              In early May, a series of events unfolded that have led to a new
+              In early May, a series of events unfolded that has led to a new
               phase of care for Tim. He is at home and comfortable, but there
               have been significant changes to his health.
             </div>
@@ -57,8 +57,8 @@ export default function Home() {
             <div>
               As of writing, he recognizes us and can speak a little, but
               otherwise is very sleepy and requires around-the-clock care.
-              He&apos;s more alert and talkative in the evenings—from about 5pm
-              to 8pm. We&apos;d be delighted for you to visit, but ask that you
+              He&apos;s more alert and talkative in the evenings—from about 4pm
+              to 7pm. We&apos;d be delighted for you to visit, but ask that you
               do two things:
               <ol className={'list-decimal list pl-12 mt-2'}>
                 <li>Plan your visit for the afternoon or evening</li>
