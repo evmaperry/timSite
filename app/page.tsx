@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/carousel';
 import evanAndTim from '@/may_23_evan_and_tim.jpg';
 import sunnyAndTim from '@/may_23_sunny_and_tim.jpeg';
+import collage from '@/IMG_6807.jpg'
 
 export default function Home() {
   return (
@@ -79,11 +80,11 @@ export default function Home() {
               <br />
               the Perry&apos;s
             </div>
-            {/* <Carousel
+            <Carousel
               className={'flex relative h-100 w-2/3 sm:w-5/6 mx-auto mt-4'}
             >
               <CarouselContent className={'h-full w-full'}>
-                {[sunnyAndTim, evanAndTim].map((image, index) => {
+                {[collage, evanAndTim].map((image, index) => {
                   return (
                     <CarouselItem
                       key={`photo-${index}`}
@@ -104,7 +105,7 @@ export default function Home() {
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
-            </Carousel> */}
+            </Carousel>
           </div>
         </div>
       </main>
