@@ -49,7 +49,7 @@
 }
 
 .entry-post {
-  @apply flex flex-col gap-y-4
+  @apply flex flex-col gap-y-4 pt-12
 }
 
 .entry-title-container {
@@ -65,7 +65,7 @@
 }
 
 .entry-body {
-  @apply flex flex-col gap-y-4 
+  @apply flex flex-col gap-y-4
 }
 
 :root {

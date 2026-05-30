@@ -11,15 +11,13 @@ import {
 import evanAndTim from '@/may_23_evan_and_tim.jpg';
 import sunnyAndTim from '@/may_23_sunny_and_tim.jpeg';
 import collage from '@/IMG_6808.jpg';
-import dadSunnyKellyAndGlen from '@/IMG_6812.jpg'
+import dadSunnyKellyAndGlen from '@/IMG_6812.jpg';
 
 export default function Home() {
   return (
     <div className='flex flex-col flex-1 items-center justify-center font-sans'>
-      <main className='flex flex-1 w-full max-w-3xl flex-col items-center justify-start gap-y-4 py-16 px-4 sm:px-16 sm:items-start'>
-        <header className={'mb-6'}>
-          <div className={'text-4xl'}>Tim&apos;s Journey</div>
-        </header>
+      <main className='flex flex-1 w-full max-w-3xl flex-col items-center justify-start py-16 px-4 sm:px-16 sm:items-start'>
+        <div className={'text-4xl'}>Tim&apos;s Journey</div>
 
         <div className={'entry-post'}>
           <div className={'entry-title-container'}>
@@ -85,28 +83,72 @@ export default function Home() {
               className={'flex relative h-100 w-2/3 sm:w-5/6 mx-auto mt-4'}
             >
               <CarouselContent className={'h-full w-full'}>
-                {[collage, evanAndTim, dadSunnyKellyAndGlen].map((image, index) => {
-                  return (
-                    <CarouselItem
-                      key={`photo-${index}`}
-                      className={
-                        'flex justify-center items-center h-full w-full'
-                      }
-                    >
-                      <Image
-                        src={image}
-                        alt={'photo'}
-                        height={500}
-                        width={500}
-                        style={{ objectFit: 'contain' }}
-                      />
-                    </CarouselItem>
-                  );
-                })}
+                {[collage, evanAndTim, dadSunnyKellyAndGlen].map(
+                  (image, index) => {
+                    return (
+                      <CarouselItem
+                        key={`photo-${index}`}
+                        className={
+                          'flex justify-center items-center h-full w-full'
+                        }
+                      >
+                        <Image
+                          src={image}
+                          alt={'photo'}
+                          height={500}
+                          width={500}
+                          style={{ objectFit: 'contain' }}
+                        />
+                      </CarouselItem>
+                    );
+                  },
+                )}
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
+          </div>
+        </div>
+
+        <div className={'entry-post'}>
+          <div className={'entry-title-container'}>
+            <div className='entry-title-text'>A week by the water</div>
+            <div className='entry-subtitle-text'>May 30th, 2026</div>
+          </div>
+          <div className={'entry-body'}>
+            <div>Hi all,</div>
+            <div>
+              We&apos;ve had Tim home for just over a week and wanted to provide
+              an update.
+            </div>
+            <div>
+              Tim is stable and comfortable in the bedroom by the water.
+              We&apos;ve seen small but meaningful improvements to his cognition
+              and memory since his surgery and homecoming. It&apos;s been a joy
+              to watch Tim&apos;s eyes light up when an old friend comes for a
+              visit, and he&apos;s caught us off guard by finishing a sentence
+              for us every now and again. Yet, to be clear, Tim is sleeping a
+              lot, his speech is labored, he gets confused sometimes, and
+              he&apos;s not eating much.
+            </div>
+            <div>
+              Our family have been blessed with an incredible support team to
+              help us navigate many around-the-clock challenges. We are
+              discovering a new groove together. On the evening of the 28th we
+              had a lovely birthday party for Tim, complete with cake and ice
+              cream, gifts, fireworks, helium balloons, and a brief rendition of
+              &quot;the Lollipop Guild&quot;, as you can imagine.
+            </div>
+            <div>
+              If you&apos;d like to visit, we&apos;d love to have you. Please
+              plan for the afternoon and give Anne, Scott or Evan a
+              heads up to avoid a crowd.
+            </div>
+            <div>
+              With love,
+              <br />
+              the Perry&apos;s
+            </div>
           </div>
         </div>
       </main>
